@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  width: 100%;
+  cursor: url(images/cursor.png), default;
 }
 
 img {
@@ -24,7 +26,7 @@ img {
 
 #game_background {
   grid-area: 1 / 1;
-  background-image: url(./images/Church.jpg);
+  background-image: url(images/Church.jpg);
   background-size: cover;
   aspect-ratio: 16/9;
 }
@@ -36,37 +38,41 @@ img {
 }
 
 #running_boy_sprite {
-  grid-area: 1/1;
   position: absolute;
   overflow: hidden;
-  height: 200px;
-  width: 200px;
+  width: 12%;
+  top: 75%;
+  left: 50%;
+}
+#running_boy_blood_sprite {
+  position: absolute;
+  overflow: hidden;
+  width: 12%;
   top: 80%;
   left: 50%;
+  border-radius: 50%;
+  display: none;
 }
 
 #priest_sprite {
-  grid-area: 1/1;
   position: absolute;
   overflow: hidden;
-  height: 300px;
-  width: 200px;
-  top: 60%;
-  left: 80%;
+  width: 10%;
+  top: 55%;
+  left: 72%;
 }
 
-#window_sprite {
-  grid-area: 1/1;
+#running_priest_blood_sprite {
   position: absolute;
   overflow: hidden;
-  height: 219px;
-  width: auto;
-  top: 17%;
-  left: 25%;
+  width: 16%;
+  top: 62%;
+  left: 69%;
+  border-radius: 50%;
+  display: none;
 }
 
 #game_foreground {
-  grid-area: 1 / 1;
   background-image: url();
   background-size: cover;
   position: relative;
@@ -91,26 +97,23 @@ img {
   left: 11%;
 }
 #energy_board {
-  width: 26%;
   position: absolute;
   top: 5%;
   left: 2%;
-  width: 50px;
+  width: 4%;
   height: auto;
 }
 #energy_board1 {
-  width: 26%;
   position: absolute;
   top: 5%;
   left: 8%;
-  width: 50px;
+  width: 4%;
   height: auto;
 }
 #energy_board2 {
-  width: 26%;
   position: absolute;
   top: 5%;
   left: 14%;
-  width: 50px;
+  width: 4%;
   height: auto;
 }
