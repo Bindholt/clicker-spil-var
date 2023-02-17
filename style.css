@@ -44,9 +44,27 @@ img {
   position: absolute;
   overflow: hidden;
   width: 12%;
-  top: 75%;
+  top: 50%;
   left: 50%;
 }
+
+.running_boy_class {
+  animation-name: falling;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(150%, -140%);
+  }
+
+  100% {
+    transform: translate(-35%, -145%);
+  }
+}
+
 #running_boy_blood_sprite {
   position: absolute;
   overflow: hidden;
@@ -63,6 +81,23 @@ img {
   width: 10%;
   top: 55%;
   left: 72%;
+}
+
+.running_priest_class {
+  animation-name: falling;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(25%, -150%);
+  }
+
+  100% {
+    transform: translate(-35%, -145%);
+  }
 }
 
 #running_priest_blood_sprite {
@@ -104,19 +139,16 @@ img {
   top: 5%;
   left: 2%;
   width: 4%;
-  height: auto;
 }
 #energy_board1 {
   position: absolute;
   top: 5%;
   left: 8%;
   width: 4%;
-  height: auto;
 }
 #energy_board2 {
   position: absolute;
   top: 5%;
   left: 14%;
   width: 4%;
-  height: auto;
 }
